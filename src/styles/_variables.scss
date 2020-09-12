@@ -1,0 +1,30 @@
+$darkBlue: hsl(209, 23%, 22%);
+$veryDarkBlue1: hsl(207, 26%, 17%);
+$veryDarkBlue2: hsl(200, 15%, 8%);
+$darkGary: hsl(0, 0%, 52%);
+$veryLightGray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+ 
+//:root is useful for declaring global css variables
+:root {
+    --darkBlue: hsl(209, 23%, 22%);
+    --veryDarkBlue1: hsl(207, 26%, 17%);
+    --veryDarkBlue2: hsl(200, 15%, 8%);
+    --darkGary: hsl(0, 0%, 52%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.light {
+    --background: var(--veryLightGray);
+    --element: var(--white);
+    --font: var(--veryDarkBlue2);
+    --input: var(--darkGary);
+}
+
+.dark {
+    --background: var(--veryDarkBlue1);
+    --element: var(--darkBlue);
+    --font: var(--white);
+    --input: var(--white);
+}
