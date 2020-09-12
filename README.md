@@ -131,6 +131,7 @@ According to the designs, the following React components and interactions have b
     1. Get all countries
     2. Get country details
 
+### Technical Details
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
