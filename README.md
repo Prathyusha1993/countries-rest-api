@@ -67,9 +67,13 @@ Once there is clarity in requirements then follow the below steps to implement
 
 ### Work Breakdown
 
-Breakdown the work into smaller stories to be worked to collaborate with the team. In this phase, we go through low level details to make sure we have all the necessary info to build the application, and find out proactively if there are any challenges.
+We have to breakdown the work into smaller stories to be worked to collaborate with the team. In this phase, we go through low level details to make sure we have all the necessary info to build the application, and find out proactively if there are any challenges.
 
-1. Components
+#### React Components
+
+According to the designs, the following React components have been identified
+
+1. React Components
     1. Home Page
         1. Header bar
             1. Where in the world
