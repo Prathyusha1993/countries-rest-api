@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+//import logo from './logo.svg';
 import './App.css';
+import Navbar from "./components/Navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      theme: true
+    }
+  }
+  
+  switchTheme = () => {
+    this.setState(state => ({theme : !state.theme}))
+  }
+
+  render() { 
+    return ( 
+      <div className={this.state.theme ? "light page" : "dark page"}>
+        <Navbar 
+        theme={this.state.theme}
+        switchTheme = {this.switchTheme}/>
+      </div>
+     );
+  }
 }
-
+ 
 export default App;
