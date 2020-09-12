@@ -69,9 +69,8 @@ Once there is clarity in requirements then follow the below steps to implement
 
 We have to breakdown the work into smaller stories to be worked to collaborate with the team. In this phase, we go through low level details to make sure we have all the necessary info to build the application, and find out proactively if there are any challenges.
 
-#### React Components
 
-According to the designs, the following React components have been identified
+According to the designs, the following React components and interactions have been identified
 
 1. React Components
     1. Home Page
