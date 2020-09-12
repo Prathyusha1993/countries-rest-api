@@ -69,7 +69,7 @@ Once there is clarity in requirements then follow the below steps to implement
     9. Bugs
         1. If any bugs, fix them
 
-#### Work Breakdown
+### Work Breakdown
 
 Breakdown the work into smaller stories to be worked to collaborate with the team. In this phase, we go through low level details to make sure we have all the necessary info to build the application, and find out proactively if there are any challenges.
 
