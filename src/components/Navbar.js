@@ -6,7 +6,7 @@ function Navbar(props) {
   return (
     <div className="header">
       <div className="header__logo">Countries in the world</div>
-      <div onClick={props.themeSwitcher} className="header__theme">
+      <div onClick={props.switchTheme} className="header__theme">
         <img
           src={props.theme ? moon_light : moon_dark}
           alt="dark"
