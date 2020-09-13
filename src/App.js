@@ -8,6 +8,7 @@ import {
 
 import Navbar from "./components/Navbar";
 import Homepage from './components/Homepage';
+import DetailPage from './components/DetailPage';
 
 class App extends Component {
   constructor(props){
@@ -31,6 +32,9 @@ class App extends Component {
         <Switch>
           <Route exact path="/">
             <Homepage theme={this.state.theme}/>
+          </Route>
+          <Route path="/:id">
+            <DetailPage theme={this.state.theme}/>
           </Route>
         </Switch>
       </div>

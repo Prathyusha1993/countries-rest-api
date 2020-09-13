@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import back_dark from '../images/back_dark.svg';
+import back_light from '../images/back_light.svg';
 
 class Detailpage extends Component {
     constructor(props){
