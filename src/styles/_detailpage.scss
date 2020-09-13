@@ -1,0 +1,35 @@
+.detail {
+    &__main {
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+    }
+    padding: 15px, 30px;
+    @include breakpoint-up(large) {
+        padding: 30px 80px;
+    }
+    &__back {
+        border:none;
+        display: flex;
+        max-width: 105px;
+        box-sizing: border-box;
+        background-color: var(--elements);
+        cursor:pointer;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 23px center;
+        font-size: 14px;
+        box-shadow: 0px 0px 5px 2px rgba($color: #000000, $alpha: 0.15);
+        border-radius: 3px;
+        padding: 7px 25px 7px 50px;
+        text-decoration: none;
+        color: var(--font);
+        margin-bottom: 60px;
+    }
+    &__flag {
+        img {
+            width: 100%;
+            margin-bottom: 50px;
+          }
+    }
+}
