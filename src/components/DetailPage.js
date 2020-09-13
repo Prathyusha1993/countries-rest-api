@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import back_dark from '../images/back_dark.svg';
 import back_light from '../images/back_light.svg';
+import {fetchCountryDetails, fetchCountryByBorder} from '../services/countriesService';
 
 class Detailpage extends Component {
     constructor(props){
@@ -15,9 +16,7 @@ class Detailpage extends Component {
 
     componentDidMount(){
         console.log(window.location.pathname.slice(1,4));
-        this.setState({ isLoading: true })
-        let api_url = `https://restcountries.eu/rest/v2/alpha/${window.location.pathname.slice(1, 4)}`;
-        fetch(api_url)
+        fetchCountryDetails(window.location.pathname.slice(1,4))
         .then(res => {
             if(res.status >= 400) {
                 throw new Error("server responds with error!");
@@ -30,7 +29,7 @@ class Detailpage extends Component {
                 isLoading: false
             });
             country.borders.map(border => {
-                fetch(`https://restcountries.eu/rest/v2/alpha/${border}`)
+                fetchCountryByBorder(border)
                 .then(res => {
                     if(res.status >= 400){
                         throw new Error("server responds with error!");
