@@ -4,8 +4,7 @@ export const fetchCountries = () => {
 
 
 export const fetchCountryDetails = (countryCode) => {
-    let api_url = `https://restcountries.eu/rest/v2/alpha/${countryCode}`;
-    return fetch(api_url);
+    return fetch(`https://restcountries.eu/rest/v2/alpha/${countryCode}`);
 };
 
 export const fetchCountryByBorder = (border) => {
