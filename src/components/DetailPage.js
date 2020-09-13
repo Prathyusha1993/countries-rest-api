@@ -128,3 +128,5 @@ class Detailpage extends Component {
 }
  
 export default Detailpage;
+
+//TODO: Add proptypes

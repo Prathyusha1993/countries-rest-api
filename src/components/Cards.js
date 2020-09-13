@@ -57,3 +57,5 @@ function Cards(props) {
 }
 
 export default Cards;
+
+//TODO: Add proptypes

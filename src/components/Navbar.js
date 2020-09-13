@@ -19,3 +19,5 @@ function Navbar(props) {
 }
 
 export default Navbar;
+
+//TODO: Add proptypes

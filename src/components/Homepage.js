@@ -3,7 +3,7 @@ import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
 import search_dark from "../images/search_dark.svg";
 import search_light from "../images/search_light.svg";
-import {fetchCountries} from "./../services";
+import {fetchCountries} from "./../services/countriesService";
 
 class Home extends Component {
   constructor(props) {
@@ -144,3 +144,5 @@ class Home extends Component {
 }
 
 export default Home;
+
+//TODO: Add proptypes
