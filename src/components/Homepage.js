@@ -3,6 +3,7 @@ import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
 import search_dark from "../images/search_dark.svg";
 import search_light from "../images/search_light.svg";
+import {fetchCountries} from "./../services";
 
 class Home extends Component {
   constructor(props) {
@@ -18,8 +19,7 @@ class Home extends Component {
 
   componentDidMount() {
     this.setState({ isLoading: true });
-    let api_url = "https://restcountries.eu/rest/v2/all";
-    fetch(api_url)
+    fetchCountries()
       .then((res) => {
         if (res.status >= 400) {
           throw new Error("server responds with error!");
